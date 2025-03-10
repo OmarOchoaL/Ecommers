@@ -18,6 +18,7 @@ return new class extends Migration
         $table->integer('category_id')->unsigned();
         $table->string('time');
         $table->string('image');
+        $table->string('media');
         $table->string('typefile');
         $table->string('description');
         $table->foreign('category_id')->references('id')->on('categorys');

@@ -30,13 +30,13 @@
             <li class="nav-item menu-open">
                 <a href="{{ url('/admin') }}" class="nav-link active">
                 <i class="bi bi-house"></i>
-                  <p>Home</p>
+                  <p>Inicio</p>
                 </a>
             </li>
             <li class="nav-item menu-open">
                 <a href="{{ url('/admin/movies') }}" class="nav-link active">
                 <i class="bi bi-camera-reels"></i>
-                  <p>Movies</p>
+                  <p>Peliculas</p>
                 </a>
             </li>
             <li class="nav-item menu-open">
@@ -48,13 +48,19 @@
             <li class="nav-item menu-open">
                 <a href="{{ url('/admin/viewinghistory') }}" class="nav-link active">
                 <i class="bi bi-clock-history"></i>                
-                <p>viewing history</p>
+                <p>Historial de Visualización</p>
                 </a>
             </li>
             <li class="nav-item menu-open">
                 <a href="{{ url('/admin/configuration') }}" class="nav-link active">
                 <i class="bi bi-gear"></i>               
-                <p>Configuration</p>
+                <p>Configuracion</p>
+                </a>
+            </li>
+            <li class="nav-item menu-open">
+                <a href="{{ url('/admin/insert') }}" class="nav-link active">
+                <i class="bi bi-box-arrow-down"></i>              
+                <p>Insertar</p>
                 </a>
             </li>
             </ul>  

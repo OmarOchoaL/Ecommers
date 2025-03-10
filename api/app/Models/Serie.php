@@ -14,6 +14,7 @@ class Serie extends Model
         'category_id',
         'time',
         'image',
+        'mediaserie',
         'typefile',
         'description',
         'category_id',

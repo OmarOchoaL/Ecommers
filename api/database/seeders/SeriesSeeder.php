@@ -21,6 +21,7 @@ class SeriesSeeder extends Seeder
             'category_id'=>1,
             'time'=>'0 minutos, 0 segundos',
             'image'=>'sin miniatura',
+            'mediaserie'=>'sin archivo',
             'typefile'=>'mp4',
             'description'=>'La serie sigue a Rick Grimes, un sheriff de condado que se encuentra
             en medio de un apocalipsis zombi.',

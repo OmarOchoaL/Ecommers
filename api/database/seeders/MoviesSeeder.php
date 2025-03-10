@@ -19,6 +19,7 @@ class MoviesSeeder extends Seeder
             'category_id'=>2,
             'time'=>'0 minutos, 0 segundos',
             'image'=>'sin miniatura',
+            'media'=>'sin archivo',
             'typefile'=>'mp4',
             'description'=>'Rápidos y furiosos X narra la lucha de Dom Toretto (Vin Diesel) y su familia 
             contra Dante Reyes (Jason Momoa)',

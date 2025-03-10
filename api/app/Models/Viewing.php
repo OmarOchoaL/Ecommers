@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Viewing extends Model
 {
+    protected $table = 'viewing_history';
     protected $fillable = [
         'user_id',
         'movie_id',

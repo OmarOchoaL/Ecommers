@@ -13,6 +13,7 @@ class Movie extends Model
         'category_id',
         'time',
         'image',
+        'media',
         'typefile',
         'description',
         'category_id',

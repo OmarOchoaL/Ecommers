@@ -14,6 +14,29 @@
           <!--end::Container-->
     </div>
     <div class="app-content">
-        
+    <table class="table col-12 table-responsive">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>User Id</td>
+                        <td>Movie Id</td>
+                        <td>Category Id</td>
+                        <td>Serie Id</td>                       
+                        <td>&nbsp;</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($views as $view)
+                    <tr>
+                        <td>{{$view->id}}</td>
+                        <td>{{$view->user_id}}</td>
+                        <td>{{$view->movie_id}}</td>
+                        <td>{{$view->category_id}}</td>
+                        <td>{{$view->serie_id}}</td>
+                        <button class="btn btn-round"><i class="fa fa-trash"></i></button>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
     </div>
 @endsection

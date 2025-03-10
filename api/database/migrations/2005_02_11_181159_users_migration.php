@@ -17,7 +17,7 @@ return new class extends Migration
         $table->string('password');
         $table->string('email');
         $table->integer('plan_id')->unsigned();
-        $table->string('end_Plan');
+        $table->date('end_Plan')->change;
         $table->foreign('plan_id')->references('id')->on('plans');
         $table->timestamps();
     });
