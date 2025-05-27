@@ -10,18 +10,20 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-    {
-    Schema::create('users', function (Blueprint $table){
+{
+    Schema::create('users', function (Blueprint $table) {
         $table->increments('id');
-        $table->string('username');
+        $table->string('username')->unique();
+        $table->string('email')->unique();
         $table->string('password');
-        $table->string('email');
-        $table->integer('plan_id')->unsigned();
-        $table->date('end_Plan')->change;
-        $table->foreign('plan_id')->references('id')->on('plans');
+        $table->unsignedInteger('plan_id')->default(4); // Plan gratuito por defecto
+        $table->dateTime('end_Plan')->nullable(); // Fecha de finalización opcional
+        $table->rememberToken(); // Opcional pero útil
         $table->timestamps();
+        $table->foreign('plan_id')->references('id')->on('plans');
     });
-    }
+}
+
 
     /**
      * Reverse the migrations.

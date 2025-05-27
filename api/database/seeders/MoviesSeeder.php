@@ -18,7 +18,7 @@ class MoviesSeeder extends Seeder
             'slug'=>'f&fx',
             'category_id'=>2,
             'time'=>'0 minutos, 0 segundos',
-            'image'=>'sin miniatura',
+            'image'=>'https://www.adnradio.cl/resizer/v2/QR3GGSG7R5PBVOJCOKW5PWUQPY.jpg?auth=2131411a7bb41299b2867835459338c2e4e691b0e596d4a50bdf13149a0e974d&width=1600&height=1200&quality=70&smart=true',
             'media'=>'sin archivo',
             'typefile'=>'mp4',
             'description'=>'Rápidos y furiosos X narra la lucha de Dom Toretto (Vin Diesel) y su familia 

@@ -33,7 +33,15 @@ class PlansSeeder extends Seeder
         'description'=>'Plan VIP para usuarios exigentes',
         'created_at' => now(),
         'updated_at' => now(),
-    ]);   
+    ]);
+    DB::table('plans')->insert([
+        'name_plan'=>'free',
+        'price'=> 0,
+        'type_pay'=>'no',
+        'description'=>'Es gratuito',
+        'created_at' => now(),
+        'updated_at' => now(),
+    ]);     
     
     }
 }

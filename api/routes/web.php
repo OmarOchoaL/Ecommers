@@ -35,4 +35,7 @@ Route::delete('/admin/movies/{id}', [UsersController::class, 'deleteMovie'])->na
 //Route::delete('/admin/categories/{id}', [CategoryController::class, 'destroy'])->name('admin.eliminarcategoria');
 //Actualizar
 Route::put('/admin/verdatos/{id}', [UsersController::class, 'update'])->name('users.update');
-
+// Es de prueba despues borrar
+//Route::get('/prueba-db', function () {
+  //  return DB::table('migrations')->get();
+//});

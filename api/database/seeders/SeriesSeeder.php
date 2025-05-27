@@ -20,7 +20,7 @@ class SeriesSeeder extends Seeder
             'slug'=>'tdw',
             'category_id'=>1,
             'time'=>'0 minutos, 0 segundos',
-            'image'=>'sin miniatura',
+            'image'=>'https://ntvb.tmsimg.com/assets/p8282918_b_h8_bn.jpg?w=960&h=540',
             'mediaserie'=>'sin archivo',
             'typefile'=>'mp4',
             'description'=>'La serie sigue a Rick Grimes, un sheriff de condado que se encuentra

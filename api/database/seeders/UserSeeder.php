@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
             'username'=>'tadeoguapo',
             'password'=>'tadeoguapo',
             'email'=>'tadeoguapo@gmail.com',
-            'plan_id'=>5,
-            'end_Plan'=>17/03/2025,
+            'plan_id'=>4,
+            'end_Plan'=>null,
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -24,8 +24,8 @@ class UserSeeder extends Seeder
             'username'=>'fulanito',
             'password'=>'12345678',
             'email'=>'fulanitofeo@gmail.com',
-            'plan_id'=>5,
-            'end_Plan'=>17/03/2025,
+            'plan_id'=>4,
+            'end_Plan'=>null,
             'created_at' => now(),
             'updated_at' => now(),
         ]);

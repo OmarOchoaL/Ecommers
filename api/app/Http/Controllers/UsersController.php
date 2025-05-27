@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\support\Facades\Mail;
 use App\Models\User;
 use App\Models\Category;
@@ -105,14 +106,15 @@ public function deleteMovie($id)
             return redirect()->route('admin.verdatos')->with('error', 'Película no encontrada.');
         }
     }
-    public function edit($id)
+public function edit($id)
     {
         $user = User::findOrFail($id);
         return view('admin.verdatos', compact('user'));
     }
     
-    public function update(Request $request, $id)
+public function update(Request $request, $id)
     {
+
         $validated = $request->validate([
             'username' => 'required|string|max:255',
             'password' => 'required|string|max:20' ,
@@ -127,4 +129,24 @@ public function deleteMovie($id)
             return redirect()->route('users.edit', ['id' => $user->id])->with('success', 'Usuario actualizado correctamente');
         }
 
+public function updatePlan(Request $request)
+    {
+        $user = auth()->user(); // O usa $request->user() si estás autenticando con Sanctum
+
+        if (!$user) {
+            return response()->json(['error' => 'Usuario no autenticado'], 401);
+        }
+
+        $planId = $request->input('plan_id');
+
+        // Validación opcional
+        if (!in_array($planId, [1, 2, 3, 4])) {
+            return response()->json(['error' => 'Plan inválido'], 422);
+        }
+
+        $user->plan_id = $planId;
+        $user->save();
+
+        return response()->json(['message' => 'Plan actualizado correctamente', 'plan_id' => $planId]);
+    }
 }
